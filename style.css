@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+
+:root{
+    --body-background:#4a7b4e;
+    --calculator-body: #8bc08c;
+    --input-background: #a9dead;
+    --font-color: #29482e;
+    
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Preahvihear', sans-serif;
+    background-color: var(--body-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px -3px 15px #29482e, 5px 5px 10px #182d1c;
+}
+
+.calculator{
+    background-color: var(--calculator-body);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--input-background);
+    box-shadow: -3px -3px 15px #79AC78, 2px 2px 10px #618264;
+    background: transparent;
+    font-size: 23px;
+    color: var(--font-color);
+    margin: 10px;
+
+}
+
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    background-color: var(--input-background);
+    font-size: 35px;
+    padding: 10px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+p{
+    color: #213523;
+}
